@@ -38,7 +38,7 @@ class ComplexArithmetic {
      * @param object $complex2
      * @return object
      */
-    public function add(object $complex1, object $complex2){
+    public function add($complex1, $complex2){
         $result = new stdClass();
 
         // Проверка на корректность
@@ -65,7 +65,7 @@ class ComplexArithmetic {
      * @param object $complex2
      * @return object
      */
-    public function sub(object $complex1, object $complex2){
+    public function sub($complex1, $complex2){
         $result = new stdClass();
 
         // Проверка на корректность
@@ -92,7 +92,7 @@ class ComplexArithmetic {
      * @param object $complex2
      * @return object
      */
-    public function mult(object $complex1, object $complex2){
+    public function mult($complex1, $complex2){
         $result = new stdClass();
 
         // Проверка на корректность
@@ -123,7 +123,7 @@ class ComplexArithmetic {
      * @param object $complex2
      * @return object
      */
-    public function div(object $complex1, object $complex2){
+    public function div($complex1, $complex2){
         $result = new stdClass();
 
         // Проверка на корректность
@@ -175,7 +175,7 @@ class ComplexArithmetic {
      * @param object $complex
      * @return string
      */
-    public function toStr(object $complex): string
+    public function toStr($complex): string
     {
         if (
             (isset($complex->errorCode))
@@ -227,7 +227,7 @@ class ComplexArithmetic {
      * @param object $complex
      * @return bool
      */
-    private function isCorrect(object $complex) :bool
+    private function isCorrect($complex) :bool
     {
         $result = false;
 
